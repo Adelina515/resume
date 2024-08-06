@@ -1,0 +1,104 @@
+button {
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.list {
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: black;
+  background-color: rgb(117, 121, 103);
+  padding-top: 20px;
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
+ol,
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 448px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 720px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.person-inform {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  height: 285px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 32px;
+  text-align: center;
+}
+.wrap-contacts {
+  border: solid 4px;
+  border-radius: 4px;
+  height: auto;
+  width: 210px;
+  background-color: rgb(213, 210, 203);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 10px rgba(0, 0, 0, 0.2),
+    1px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+}
