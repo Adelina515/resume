@@ -88,17 +88,81 @@ h1 {
 h2 {
   font-size: 32px;
   text-align: center;
+  letter-spacing: 0.08em;
 }
 .wrap-contacts {
   border: solid 4px;
   border-radius: 4px;
   height: auto;
-  width: 210px;
+  width: 215px;
+  overflow: hidden;
   background-color: rgb(213, 210, 203);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 10px rgba(0, 0, 0, 0.2),
     1px 4px 10px rgba(0, 0, 0, 0.5);
 }
+.wrap-contact {
+  padding: 15px;
+  padding-top: 5px;
+}
+.contact-elements {
+  margin-bottom: 10px;
+}
 .contact-link {
   display: flex;
   align-items: center;
+  font-size: 15px;
+  transition: transform 0.3s;
+}
+.contact-link:focus,
+.contact-link:hover {
+  font-size: 17px;
+  color: rgb(67, 93, 5);
+  fill: rgb(67, 93, 5);
+  transform: scale(1.1); /* Масштабування посилання */
+}
+
+.contact-svg {
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.contact-link:hover .contact-svg,
+.contact-link:focus .contact-svg {
+  animation: rotate-icon 0.3s forwards;
+}
+
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.wrap-oll-section {
+  margin-top: 30px;
+  display: flex;
+}
+
+.person-skills {
+  width: 223px;
+}
+.list-tech-skills {
+  padding: 6px;
+}
+.skill-elements {
+  font-size: 16px;
+  list-style: circle;
+  font-weight: 500;
+}
+.summary {
+  margin-bottom: 15px;
+}
+.summary-text {
+  text-align: justify;
+  font-size: 16px;
+  padding: 6px 0 0 30px;
 }
