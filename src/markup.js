@@ -1,6 +1,5 @@
 import { projectList } from "./projectList.js";
 
-console.log("projectList", projectList);
 const listProject = document.querySelector(".project");
 
 const markup = projectList
@@ -29,14 +28,11 @@ const markup = projectList
 
 listProject.insertAdjacentHTML("beforeend", markup);
 const stackElements = document.querySelectorAll(".proj-stack");
-console.log(stackElements);
 
 stackElements.forEach((stackElement) => {
   const scrollWidth = stackElement.scrollWidth;
   const clientWidth = stackElement.clientWidth;
 
-  console.log(`scrollWidth: ${scrollWidth}, clientWidth: ${clientWidth}`);
-  console.log(stackElement);
   stackElement.addEventListener("mouseover", () => {
     if (scrollWidth > clientWidth) {
       stackElement.style.transition = "transform 3.5s ease-in-out";
@@ -53,3 +49,34 @@ stackElements.forEach((stackElement) => {
     stackElement.style.overflow = "hidden";
   });
 });
+
+const btnDec = document.querySelector(".bnt-dec");
+const btnInc = document.querySelector(".bnt-inc");
+const wrap = document.querySelector(".wrap-project");
+
+// Встановлюємо поточне зміщення списку
+let currentTranslate = 0;
+
+const handleDec = () => {
+  // Перевіряємо, чи можемо рухатись ліворуч
+  if (currentTranslate > 0) {
+    currentTranslate -= 1;
+    updateTransform();
+  }
+};
+
+const handleInc = () => {
+  // Перевіряємо, чи можемо рухатись праворуч
+  const maxTranslate =
+    listProject.children.length - Math.floor(wrap.clientWidth / 300); // кількість видимих елементів
+  if (currentTranslate < maxTranslate) {
+    currentTranslate += 1;
+    updateTransform();
+  }
+};
+const updateTransform = () => {
+  listProject.style.transition = "transform 0.3s ease-in-out";
+  listProject.style.transform = `translateX(-${currentTranslate * 300}px)`;
+};
+btnDec.addEventListener("click", handleDec);
+btnInc.addEventListener("click", handleInc);

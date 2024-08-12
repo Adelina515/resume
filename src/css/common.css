@@ -5,6 +5,10 @@ button {
   border: none;
   z-index: 10;
 }
+button:focus,
+button:hover {
+  font-weight: 600;
+}
 
 .link {
   text-decoration: none;
@@ -178,23 +182,28 @@ h3 {
 }
 /* -----------slider------------ */
 .wrap-slider {
-  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 6px 0 0 30px;
   overflow: hidden;
   height: 330px;
+  width: 947px;
 }
-
+.wrap-project {
+  position: relative;
+  overflow: hidden;
+  width: 900px;
+}
 .project {
   position: absolute;
   display: flex;
   justify-content: space-around;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 7px;
+  transform: translateX(0);
+  overflow: hidden;
 }
 .list-project {
-  margin-right: 48px;
+  margin-right: 50px;
   padding-bottom: 15px;
   background-color: rgb(213, 210, 203);
   border: solid 4px;
@@ -204,9 +213,7 @@ h3 {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 10px rgba(0, 0, 0, 0.2),
     1px 4px 10px rgba(0, 0, 0, 0.5);
 }
-.list-project::first-letter {
-  margin-left: 40px;
-}
+
 .proj-text-thumb {
   position: relative;
   overflow: hidden;
