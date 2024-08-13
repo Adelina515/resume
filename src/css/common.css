@@ -26,7 +26,8 @@ body {
   letter-spacing: 0.03em;
   color: black;
   background-color: rgb(117, 121, 103);
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 .section {
   padding-top: 60px;
@@ -81,7 +82,7 @@ ul {
 .person-inform {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   height: 285px;
 }
 
@@ -156,7 +157,7 @@ h3 {
   }
 }
 .wrap-oll-section {
-  margin-top: 30px;
+  margin-top: 5px;
   display: flex;
 }
 
@@ -177,7 +178,7 @@ h3 {
 }
 .summary-text {
   text-align: justify;
-  font-size: 14px;
+  font-size: 14, 5px;
   padding: 6px 0 0 30px;
 }
 /* -----------slider------------ */
@@ -188,6 +189,8 @@ h3 {
   overflow: hidden;
   height: 330px;
   width: 947px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .wrap-project {
   position: relative;
@@ -278,4 +281,10 @@ h3 {
 .proj-link:hover {
   background-color: rgb(118, 122, 104);
   cursor: pointer;
+}
+.head-experience {
+  text-align: left;
+}
+.wrap-experience {
+  padding: 6px 0 0 30px;
 }
