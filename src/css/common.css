@@ -288,3 +288,16 @@ h3 {
 .wrap-experience {
   padding: 6px 0 0 30px;
 }
+.work-experience {
+  margin-bottom: 15px;
+}
+.education-el {
+  margin-bottom: 10px;
+}
+.link-diploma {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.4, 1);
+}
+.link-diploma:focus,
+.link-diploma:hover {
+  color: rgb(213, 210, 203);
+}
