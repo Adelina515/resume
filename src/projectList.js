@@ -1,6 +1,6 @@
 export const projectList = [
   {
-    img: "./img/icecream.jpg",
+    img: "src/img/icecream.jpg",
     alt: "Ice cream",
     text: "Ice company website with responsive layout, burger menu, modal window and attractive design.",
     stack: ["Parcel", "HTML", "SCSS", "JS"],
@@ -12,7 +12,7 @@ export const projectList = [
     },
   },
   {
-    img: "./img/bookShelf.jpg",
+    img: "src/img/bookShelf.jpg",
     alt: "Books shelf",
     text: "Book company website with responsive layout, burger menu, modal window and attractive design. You can register, log in, add and remove books in shop.",
     stack: ["Parcel", "HTML", "SCSS", "JS", "REST API"],
@@ -24,7 +24,7 @@ export const projectList = [
     },
   },
   {
-    img: "./img/powerPulse.jpg",
+    img: "src/img/powerPulse.jpg",
     alt: "Power Pulse",
     text: "Power Pulse is a fitness app for transforming your body shape and lifestyle. With the help of this app, people can keep track of their weight, engage in sports, and lead a healthy lifestyle",
     stack: [
@@ -43,7 +43,7 @@ export const projectList = [
     },
   },
   {
-    img: "./img/calculator.jpg",
+    img: "src/img/calculator.jpg",
     alt: "Calculator",
     text: "A calculator that allows users to calculate the daily and total loan repayment amount based on the entered loan amount and repayment period.",
     stack: ["Parcel", "HTML", "SCSS", "JS"],
